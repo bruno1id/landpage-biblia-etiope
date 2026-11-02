@@ -251,6 +251,16 @@
   .x147::before{transform:rotate(22deg)}
   .x147::after{transform:rotate(-22deg)}
   .cta .x147::before,.cta .x147::after{background:#ff5a4f;height:2px}
+
+  /* Galeria do app na mão */
+  .galeria{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+  .galeria div{border-radius:14px;overflow:hidden;border:1px solid rgba(184,137,58,.4);box-shadow:0 10px 24px -14px rgba(0,0,0,.45);background:var(--papel)}
+  .galeria img{width:100%;height:100%;object-fit:cover}
+  .galeria .g1{grid-column:1 / -1;aspect-ratio:1/1}
+  .galeria .g2{aspect-ratio:3/4}
+  .galeria .g3{aspect-ratio:3/4}
+  .galeria .g3 img{object-position:center 60%}
+  .nota{text-align:center;font-size:12px;opacity:.6;margin-top:8px}
 </style>
 </head>
 <body>
@@ -391,20 +401,20 @@
   </div>
 </section>
 
-<!-- ================= PROVA SOCIAL ================= -->
+<!-- ================= O APP NA MÃO ================= -->
 <section>
   <div class="wrap rev">
-    <div class="kicker">Quem já está lendo</div>
-    <h2 style="text-align:center;margin-top:14px">Uma coleção que transforma o estudo.</h2>
+    <div class="kicker">O app por dentro</div>
+    <h2 style="text-align:center;margin-top:14px">A Bíblia Etíope na palma da sua mão.</h2>
     <div class="divisor curto"></div>
-    <p class="sub">Veja o que os leitores estão dizendo:</p>
-    <!-- DEPOIMENTOS: coloque prints REAIS de clientes em img/depo1.jpg, img/depo2.jpg, img/depo3.jpg -->
-    <div class="depo">
-      <div class="foto r-4x3"><img src="img/depo1.jpg" alt="Depoimento de cliente" onerror="this.parentElement.classList.add('sem-img')"><div class="vazio"><b>img/depo1.jpg</b>Print de depoimento real de cliente</div></div>
-      <div class="foto r-4x3"><img src="img/depo2.jpg" alt="Depoimento de cliente" onerror="this.parentElement.classList.add('sem-img')"><div class="vazio"><b>img/depo2.jpg</b>Print de depoimento real de cliente</div></div>
-      <div class="foto r-4x3"><img src="img/depo3.jpg" alt="Depoimento de cliente" onerror="this.parentElement.classList.add('sem-img')"><div class="vazio"><b>img/depo3.jpg</b>Print de depoimento real de cliente</div></div>
+    <p class="sub">Abra no celular e leia onde estiver: os 88 livros organizados, com Enoque e Jubileus em destaque.</p>
+    <div class="galeria">
+      <div class="g1"><img src="img/app-mao1.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
+      <div class="g2"><img src="img/app-mao2.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
+      <div class="g3"><img src="img/app-mao3.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
     </div>
-    <a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero fazer parte também<small>Acesso imediato após o pagamento</small></a>
+    <p class="nota">Imagens ilustrativas.</p>
+    <a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero o app no meu celular<small>Acesso imediato após o pagamento</small></a>
   </div>
 </section>
 
