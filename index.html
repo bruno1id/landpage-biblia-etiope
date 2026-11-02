@@ -244,6 +244,13 @@
     .foto.full{border-radius:14px}
     .fixo{display:none}
   }
+
+  /* X vermelho em cima do preço antigo */
+  .x147{position:relative;display:inline-block;padding:0 2px}
+  .x147::before,.x147::after{content:"";position:absolute;left:-2px;right:-2px;top:50%;height:2.5px;background:#e0261b;border-radius:2px}
+  .x147::before{transform:rotate(22deg)}
+  .x147::after{transform:rotate(-22deg)}
+  .cta .x147::before,.cta .x147::after{background:#ff5a4f;height:2px}
 </style>
 </head>
 <body>
@@ -324,7 +331,7 @@
     <div class="vazio"><b>img/razao3.jpg</b>Sacerdote etíope lendo um manuscrito iluminado</div>
   </div>
 </section>
-<div class="wrap"><a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero minha Bíblia Etíope<small>De R$147 por apenas R$67</small></a></div>
+<div class="wrap"><a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero minha Bíblia Etíope<small>De <span class="x147">R$147</span> por apenas R$67</small></a></div>
 
 
 <!-- ================= RAZÃO 04 ================= -->
@@ -417,7 +424,7 @@
     </div>
 
     <div class="preco">
-      <div class="de">Tudo de <s>R$147,00</s></div>
+      <div class="de">Tudo de <span class="x147">R$147,00</span></div>
       <div class="por">por apenas</div>
       <div class="valor">R$67,00</div>
       <div class="parc">Pagamento único · acesso para sempre</div>
