@@ -261,6 +261,14 @@
   .galeria .g3{aspect-ratio:3/4}
   .galeria .g3 img{object-position:center 60%}
   .nota{text-align:center;font-size:12px;opacity:.6;margin-top:8px}
+
+  /* Depoimentos */
+  .deps{display:grid;gap:12px;margin-top:22px}
+  .dep{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.55);border:1px solid rgba(184,137,58,.45);border-radius:14px;padding:14px 16px;box-shadow:0 8px 20px -14px rgba(0,0,0,.4)}
+  .dep img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--ouro-claro)}
+  .dep b{display:block;font-size:15.5px;color:var(--tinta);font-weight:700}
+  .dep p{font-size:15px;line-height:1.45;margin-top:3px;color:#4a372c;font-style:italic}
+  .estrelas{color:#e8a317;font-size:18px;letter-spacing:2px;margin-top:4px}
 </style>
 </head>
 <body>
@@ -401,20 +409,27 @@
   </div>
 </section>
 
-<!-- ================= O APP NA MÃO ================= -->
+<!-- ================= DEPOIMENTOS ================= -->
 <section>
   <div class="wrap rev">
-    <div class="kicker">O app por dentro</div>
-    <h2 style="text-align:center;margin-top:14px">A Bíblia Etíope na palma da sua mão.</h2>
+    <div class="kicker">Quem já está lendo</div>
+    <h2 style="text-align:center;margin-top:14px">O que dizem os leitores.</h2>
     <div class="divisor curto"></div>
-    <p class="sub">Abra no celular e leia onde estiver: os 88 livros organizados, com Enoque e Jubileus em destaque.</p>
-    <div class="galeria">
-      <div class="g1"><img src="img/app-mao1.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
-      <div class="g2"><img src="img/app-mao2.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
-      <div class="g3"><img src="img/app-mao3.jpg" alt="App da Bíblia Etíope no celular" loading="lazy"></div>
+    <div class="deps">
+      <div class="dep">
+        <img src="img/depo-maria.jpg" alt="Maria José Correia" loading="lazy">
+        <div><b>Maria José Correia</b><p>“Sempre quis ler Enoque. Agora li inteiro, e em português.”</p><div class="estrelas" aria-label="5 estrelas">★★★★★</div></div>
+      </div>
+      <div class="dep">
+        <img src="img/depo-ednaldo.jpg" alt="Ednaldo da Silva" loading="lazy">
+        <div><b>Ednaldo da Silva</b><p>“Uso o guia de versículos nos estudos da igreja. Recomendo.”</p><div class="estrelas" aria-label="5 estrelas">★★★★★</div></div>
+      </div>
+      <div class="dep">
+        <img src="img/depo-maiara.jpg" alt="Maiara Lins" loading="lazy">
+        <div><b>Maiara Lins</b><p>“Fiquei impressionada com Jubileus. Gênesis fez muito mais sentido.”</p><div class="estrelas" aria-label="5 estrelas">★★★★★</div></div>
+      </div>
     </div>
-    <p class="nota">Imagens ilustrativas.</p>
-    <a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero o app no meu celular<small>Acesso imediato após o pagamento</small></a>
+    <a class="cta" href="https://pay.kiwify.com.br/LjaNFX9">Quero ler também<small>Acesso imediato após o pagamento</small></a>
   </div>
 </section>
 
