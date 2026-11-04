@@ -270,6 +270,19 @@
   .dep p{font-size:15px;line-height:1.45;margin-top:3px;color:#4a372c;font-style:italic}
   .estrelas{color:#e8a317;font-size:18px;letter-spacing:2px;margin-top:4px}
 </style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','996412200168832');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'Bíblia Etíope',value:67,currency:'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=996412200168832&ev=PageView&noscript=1"/></noscript>
+<!-- Fim Meta Pixel -->
 </head>
 <body>
 
@@ -506,6 +519,8 @@
   // Todos os botões levam ao checkout, repassando os parâmetros UTM do anúncio
   const destino = CHECKOUT_URL + (location.search ? (CHECKOUT_URL.includes('?') ? '&' : '?') + location.search.slice(1) : '');
   document.querySelectorAll('a.cta').forEach(a => a.href = destino);
+  // Pixel: InitiateCheckout ao clicar em qualquer botão de compra
+  document.querySelectorAll('a.cta').forEach(a => a.addEventListener('click', () => { try { fbq('track','InitiateCheckout',{content_name:'Bíblia Etíope',value:67,currency:'BRL'}); } catch(e){} }));
 
   const el = document.getElementById('timer');
   function tick(){
